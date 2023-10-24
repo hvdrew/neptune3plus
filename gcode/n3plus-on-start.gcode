@@ -56,7 +56,7 @@ M300 S100 P100; chirp
 ; M117 Heating Bed ; update LCD if we have one
 G0 Z25 F240 ; get the nozzle safely away from bed
 G0 Y300 F3000 ; move bed forward for access while waiting for temps
-M190 S[first_layer_bed_temperature - 5] ; wait till -5 target bed temp
+M190 S{first_layer_bed_temperature[0] - 5} ; wait till -5 target bed temp
 M140 S[first_layer_bed_temperature] ; resume bed temp heating
 
 ; About to take the bed back to finish heating:
