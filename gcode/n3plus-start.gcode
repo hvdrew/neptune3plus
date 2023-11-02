@@ -1,19 +1,5 @@
-;   ======================================================
-;  | Start gcode I am using for PrusaSlicer.              |
-;  |                                                      |
-;  |  - Printer: Elegoo Neptune 3 Plus                    |
-;  |  - Build Volume: 320x320x400mm (LxWxH)               |
-;  |                                                      |
-;  | Note: This is set to prime the nozzle on the tab of  |
-;  | the build surface, just above the Elegoo logo. Needs |
-;  | to be adjusted for use with other printers.          |
-;  |                                                      |
-;  | If you have an LCD screen, you can uncomment the     |
-;  | M117 lines to keep the LCD screen up to date.        |
-;  |                                                      |
-;  | Author: GitHub@hvdrew                                |
-;  | Source of the idea: https://muppetlabs.co            |
-;   ======================================================
+; M117 commands will update an LCD screen attached to your printer, uncomment them if you have one
+; Only meant to work for the Elegoo Neptune 3 Plus.
 
 ; Starting gcode, sing a little song:
 M300 P202 S784
